@@ -11,6 +11,35 @@ body {
 }
 
 .status-bar_column {
+    width:33%;
+}
+
+.status-bar_column:first-child span{
+    margin-right: 5px;
+}
+
+
+.status-bar_column:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+
+.status-bar_column:last-child{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.status-bar_column .fa-battery-full {
+    margin: 0px 5px;
+}
+/*
+.status-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.status-bar_column {
     width: 33%;
 }
 
@@ -32,3 +61,4 @@ body {
 .status-bar_column .fa-battery-full {
     margin: 0px 5px;
 }
+*/
