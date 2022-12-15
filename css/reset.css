@@ -46,3 +46,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*20221215*/
+input:focus{
+	outline: none;
+}
+/*20221215*/
