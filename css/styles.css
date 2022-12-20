@@ -1,36 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,800;1,700&display=swap');
 @import "reset.css";
-@import "status-bar.css";
+@import "status-bar.css";    
 @import "variables.css";
-
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.welcome-header {
-    margin: 90px 0px;
-    text-align: center;
+.welcome-kakao {
+    margin: 80px 0px;
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
 }
 
-.welcome-header__title {
-    margin-bottom: 20px;
+.welcome-kakao__title {
     font-size: 30px;
-    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-.welcome-header__text {
-    width: 60%;
+.welcome-kakao__text {
+    width: 50%;
     opacity: 0.7;
-
+    font-size: 15px;
+    line-height: 25px;
 }
 
-
-
-/*20221215*/
 
 #login-form {
     display: flex;
@@ -40,20 +36,43 @@ body {
 
 #login-form input {
     border: none;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
     padding: 15px 0px;
-    font-size: 18px;
-    margin-bottom: 25px;
-    transition: border-color .3s ease-in-out;
+    font-size: 18px;   
+    margin: 15px 0px;
 }
 
-#login-form input::placeholder{
-    color: rgba(0,0,0,0.4);
-}
 
+/*221220*/
+#login-form input:not([type="submit"]){
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    transition: border-color 0.3s ease-in-out;
+}
+/*221220*/
+
+#login-form input::placeholder {
+    color: rgba(0,0,0,0.3);
+    
+}
 
 #login-form input:focus{
     border-color: var(--yellow);
+    
 }
 
-/*20221215*/
+/*221220*/
+#login-form input[type="submit"]{
+    background-color: var(--yellow);
+    cursor: pointer;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+/*221220*/
+
+/*221220*/
+#login-form a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 13px;
+}
+/*221220*/
