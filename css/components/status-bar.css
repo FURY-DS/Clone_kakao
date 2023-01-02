@@ -1,7 +1,7 @@
 .status-bar {
-    position: fixed;
+    position: sticky; /*fixed를 줬지만 스테이터스바와 헤더바가 겹치는 현상으로 인해 고침*/
     width: 100%;
-    top: 0;
+    top: 0px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
